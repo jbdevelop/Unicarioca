@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: 0;
+}
+
+body{
+    background-color: #ededed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    font-size: 1.3rem;
+    padding: 15px;    
+    width: 100%;
+    font-weight: bold;
+}
+
+.alignment-row {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.topo-fixo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;     
+}
+
+
+.calculo {
+    background-color: #fbc02d;
+}
+
+.section{
+    margin: 100px 0 0 0;
+}
+
+::placeholder{
+    color: #90a4ae;
+}
+
+.btnApp{
+    width: 100%;
+}
+
+.h5margin{
+    padding-bottom: 15px;
+}
+  
+
+#precoGasolina{
+    margin-top: 40px;
+}
+
+div h6.black-text{
+    margin-bottom: 40px;
+}
+
+.h6margin{
+    padding-top: 30px;
+}
+
+.alignment-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultado {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* valid color */
+.input-field{
+    text-align: center;
+    margin: 0 auto;        
+    padding-top: 0px;
+    width: 80%;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.bt {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-field:focus {
+    border-bottom: 0;
+}
+
+.authorClass{
+
+}
+
+.input-resultado span {
+    font-size: 30px;
+    color: #37474f;
+}

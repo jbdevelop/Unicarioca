@@ -1,0 +1,71 @@
+.jumbotron{
+    width: 50%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: steelblue;
+}
+
+
+.form-control{
+    margin-bottom: 10px;
+    
+}
+
+
+body{
+    background-color: #dcdcdc;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.containerP{
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top img {
+    border-radius: 8px;
+    border: 10px solid white;
+}
+
+button {
+    margin-top: 30px;
+}
+
+input[type="number"], input[type="number"]:focus  {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid deepskyblue;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    font-size: 18px;
+    color: white;
+}
+input[type="number"]::placeholder{ 
+    color: deepskyblue;    
+}
+
+input[type="text"]:focus {
+    border-bottom: 1px solid white;
+}
+
+hr {
+    border: 0.5px solid #dcdcdc;
+}

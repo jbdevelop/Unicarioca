@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="appAg">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>AV1 - Fuel Calculator</title>
+        <link rel="stylesheet" href="icons/material.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/estilos.css"/>
+
+        <script src="js/angular.js"></script>
+        <script src="js/funcoesAngular.js" type="text/javascript"></script>
+    </head>
+    <body ng-controller="appAgController">
+        <div class="alignment-row">
+            <div class="topo-fixo z-depth-1">
+                <div class="valign-wrapper blue-grey darken-3 white-text top">
+                    <div class="titulo">Fuel Calculator 1.0</div>
+                    <div>
+                        <ul>
+                            <li><i class="material-icons"><a href="#modal2" class="acao-contas modal-trigger white-text" ng-click="exibirModal()">apps</a></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>    
+        
+           <form class="formEntrada">
+
+                    <div id="calculo" class="col s12 section">                    
+                        <div class="input-field">
+                            <input id="idAlcool" type="number" class="validate" step=".001" ng-model="calculo.alcool" placeholder="Digite o preço do álcool">                        
+                        </div>                    
+                        <div class="input-field">
+                            <input id="idGasolina" type="number" class="validate" step=".001" ng-model="calculo.gasolina" placeholder="Digite o preço da gasolina">                        
+                        </div>                        
+                        <!--Button-->
+                        <div class="bt">
+                            <a class="waves-effect waves-light btn-large btn-flat cyan darken-3 white-text btnApp" href="#resultado" id="btnCalcular" ng-click="calcular()"><strong>Calcular</strong></a>                                                      
+                        </div>
+                    </div>
+                    
+                    <div id="resultado" class="col s12 section grey lighten-2 white-text" ng-show="exibeResultados" style="border: 5px solid #37474f">  
+                        <div class="input-resultado">
+                            <span>{{opcao}}</span>
+                        </div>                      
+                    </div>
+            </form>
+    
+            
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal">
+                    <div class="modal-content teal lighten-5">
+                        <h4>Fuel Calculator</h4>
+                        <p>&nbsp;</p>
+                        <p> 
+                            É uma ferramenta que auxilia motoristas a abastecerem no melhor custo x benefício.
+                            O cálculo é feito da seguinte forma: (preço alcool / preço gasolina). Se o resultado for menor que 0.7,
+                            então o etanol é mais vantajoso, porém se o resultado for igual ou maior que 0.7, é melhor
+                            que se abasteça com gasolina.
+                        </p>    
+                        <p>&nbsp;</p>                   
+                        <div class="authorClass">
+                            Autor: <a href="https://github.com/jbdevelop">
+                            <strong class="blue-text text-darken-3">Júlio Bernardo</strong></a>
+                        </div>
+                        Data: Abril/2020
+                    </div>
+                
+                </div>
+        
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
